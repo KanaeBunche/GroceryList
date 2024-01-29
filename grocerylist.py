@@ -1,11 +1,15 @@
 grocery_list = []
 
+def add_item(item):
+    grocery_list.append(item)
+    print(f"{item} has been added to your grocery list.")
 
-
-    # Make a fucntion to add a new item
-
-
-    #Maka a fucntion to remove a new item
+def remove_item(item):
+    if item in grocery_list:
+        grocery_list.remove(item)
+        print(f"{item} has been removed from your grocery list.")
+    else:
+        print(f"{item} is not in your grocery list.")
 
 def view_list():
     if grocery_list:
@@ -15,7 +19,9 @@ def view_list():
     else:
         print("Your grocery list is empty.")
 
-    #Make a fucntion to clear the list
+def clear_list():
+    grocery_list.clear()
+    print("Your grocery list has been cleared.")
 
 # Main program loop 
 while True:
@@ -39,6 +45,6 @@ while True:
         clear_list()
     elif choice == '5':
         print("Exiting...")
-        
+        break
     else:
         print("Invalid choice. Please try again.")
