@@ -23,9 +23,9 @@ def clear_list():
     grocery_list.clear()
     print("Your grocery list has been cleared.")
 
-# Main program loop
+# Main program loop 
 while True:
-    print("\n1. Add Item")
+    print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
     print("4. Clear List")
