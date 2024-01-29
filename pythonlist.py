@@ -1,8 +1,7 @@
 # Two ways to make a list
 
 
-#list construtor
-
+#list Constructor
 
 
 
